@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #94ce9cd2;
+    padding-top: 56px; /* Altura del navbar */
+    padding-bottom: 40px; /* Altura del pie de página */
+}
+/* Estilo predeterminado del encabezado */
+header {
+    background-color: #94ce9cd2;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Estilo del encabezado para pantallas más pequeñas (móviles) */
+@media (max-width: 767px) {
+    header {
+        background-image: url('/assets/img/mobile.jpg'); /* Ruta de la imagen de fondo para móviles */
+        background-size: cover; /* La imagen se ajusta para cubrir todo el fondo */
+        background-position: center center; /* Centra la imagen tanto vertical como horizontalmente */
+        padding: 7em; /* Ajusta según sea necesario para aumentar el espacio vertical */
+        margin-top: 0; /* Elimina el margen superior */
+        height: 100%; /* Cubre toda la altura del header con la imagen */
+    }
+
+    .navbar {
+        margin-top: 0; /* Elimina el margen superior del navbar */
+        margin-bottom: 0; /* Elimina el espacio inferior del navbar */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+section {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #0e0f0f;
+}
+
+p {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #23571c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Ajustes para el contenido debajo del navbar y sobre el pie de página */
+#inicio {
+    padding-top: 70px; /* Ajusta el espacio superior para evitar que se solape con el navbar */
+}
+
+#reservas {
+    margin-bottom: 120px; /* Ajusta el espacio inferior para evitar que se solape con el pie de página */
+}
+
+.icon-image {
+    width: 40px; /* Ajusta el ancho según tu preferencia */
+    height: 40px; /* Ajusta la altura según tu preferencia */
+    margin: 0 10px; /* Agrega margen si es necesario */
+}
